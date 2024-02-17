@@ -3,12 +3,14 @@ public class Vehicle {
     protected String manufacturer;
     protected String model;
     protected int maxSpeed;
+    protected String type;
     protected Engine engine;
 
     public Vehicle(String manufacturer, String model, int maxSpeed) {
         this.manufacturer = manufacturer;
         this.model = model;
         this.maxSpeed = maxSpeed;
+        
     }
 
     public void setEngine(Engine engine) {
@@ -16,6 +18,6 @@ public class Vehicle {
     }
 
     public String getInfo() {
-        return manufacturer + " " + model + "\nMoottori: " + engine.getName() + " " + engine.getPower() + "kW\nHuippunopeus: " + maxSpeed + "km/h\n";
+        return type +":" + manufacturer + " " + model + "\nMoottori: " + engine.getName() + " " + engine.getPower() + "kW\nHuippunopeus: " + maxSpeed + "km/h\n";
     }
 }
