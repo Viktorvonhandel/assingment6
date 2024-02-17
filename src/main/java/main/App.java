@@ -21,28 +21,30 @@ public class App {
             choice = scanner.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.println("Minkä kulkuneuvon haluat rakentaa? 1) auto, 2) lentokone, 3) laiva");
-                    int typeChoice = scanner.nextInt();
-                    System.out.println("Anna kulkuneuvon valmistaja:");
-                    String manufacturer = scanner.nextLine();
-                    System.out.println("Anna kulkuneuvon malli:");
-                    String model = scanner.nextLine();
-                    System.out.println("Anna kulkuneuvon huippunopeus:");
-                    int maxSpeed = scanner.nextInt();
-                    switch (typeChoice) {
-                        case 1:
-                            vehicles.add(new Car(manufacturer, model, maxSpeed));
-                            break;
-                        case 2:
-                            vehicles.add(new Plane(manufacturer, model, maxSpeed));
-                            break;
-                        case 3:
-                            vehicles.add(new Ship(manufacturer, model, maxSpeed));
-                            break;
-                        default:
-                            System.out.println("Virheellinen valinta.");
-                    }
-                    break;
+                System.out.println("Minkä kulkuneuvon haluat rakentaa? 1) auto, 2) lentokone, 3) laiva");
+                int typeChoice = scanner.nextInt();
+                scanner.nextLine(); // Tyhjentää puskurin
+                System.out.println("Anna kulkuneuvon valmistaja:");
+                String manufacturer = scanner.nextLine();
+                System.out.println("Anna kulkuneuvon malli:");
+                String model = scanner.nextLine();
+                System.out.println("Anna kulkuneuvon huippunopeus:");
+                int maxSpeed = scanner.nextInt();
+                scanner.nextLine(); // Tyhjentää puskurin
+                switch (typeChoice) {
+                    case 1:
+                        vehicles.add(new Car(manufacturer, model, maxSpeed));
+                        break;
+                    case 2:
+                        vehicles.add(new Plane(manufacturer, model, maxSpeed));
+                        break;
+                    case 3:
+                        vehicles.add(new Ship(manufacturer, model, maxSpeed));
+                        break;
+                    default:
+                        System.out.println("Virheellinen valinta.");
+                }
+                break;
                 case 2:
                     for (Vehicle vehicle : vehicles) {
                         System.out.println(vehicle.getInfo());
