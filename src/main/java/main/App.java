@@ -10,7 +10,7 @@ import gasthief.Plane;
 import gasthief.Ship;
 import gasthief.Vehicle;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Vehicle> vehicles = new ArrayList<>();
