@@ -1,4 +1,4 @@
-package main;
+package gasthief.main;
 
 
 import java.util.ArrayList;
