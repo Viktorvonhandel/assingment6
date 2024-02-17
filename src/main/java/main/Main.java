@@ -1,78 +1,14 @@
- 
+package main;
+
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Vehicle {
-    protected String manufacturer;
-    protected String model;
-    protected int maxSpeed;
-    protected Engine engine;
-
-    public Vehicle(String manufacturer, String model, int maxSpeed) {
-        this.manufacturer = manufacturer;
-        this.model = model;
-        this.maxSpeed = maxSpeed;
-    }
-
-    public void setEngine(Engine engine) {
-        this.engine = engine;
-    }
-
-    public String getInfo() {
-        return manufacturer + " " + model + "\nMoottori: " + engine.getName() + " " + engine.getPower() + "kW\nHuippunopeus: " + maxSpeed + "km/h";
-    }
-}
-
-class Car extends Vehicle {
-    public Car(String manufacturer, String model, int maxSpeed) {
-        super(manufacturer, model, maxSpeed);
-        setEngine(new Engine("V8", 300));
-    }
-
-    public void drive() {
-        System.out.println(manufacturer + " " + model + " paahtaa tietä eteenpäin!");
-    }
-}
-
-class Plane extends Vehicle {
-    public Plane(String manufacturer, String model, int maxSpeed) {
-        super(manufacturer, model, maxSpeed);
-        setEngine(new Engine("Suihkumoottori", 500));
-    }
-
-    public void fly() {
-        System.out.println(manufacturer + " " + model + " lentää kohteeseen!");
-    }
-}
-
-class Ship extends Vehicle {
-    public Ship(String manufacturer, String model, int maxSpeed) {
-        super(manufacturer, model, maxSpeed);
-        setEngine(new Engine("Wärtsilä Super", 1000));
-    }
-
-    public void sail() {
-        System.out.println(manufacturer + " " + model + " seilaa merten ääriin!");
-    }
-}
-
-class Engine {
-    private String name;
-    private int power;
-
-    public Engine(String name, int power) {
-        this.name = name;
-        this.power = power;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getPower() {
-        return power;
-    }
-}
+import gasthief.Car;
+import gasthief.Engine;
+import gasthief.Plane;
+import gasthief.Ship;
+import gasthief.Vehicle;
 
 public class Main {
     public static void main(String[] args) {
