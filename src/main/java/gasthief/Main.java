@@ -1,14 +1,10 @@
-package main;
+package gasthief;
 
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import gasthief.Car;
-import gasthief.Engine;
-import gasthief.Plane;
-import gasthief.Ship;
-import gasthief.Vehicle;
+
 
 public class Main {
     public static void main(String[] args) {
