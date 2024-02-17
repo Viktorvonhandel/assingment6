@@ -1,4 +1,4 @@
-package main.gasthief;
+package gasthief;
 public class Vehicle {
     protected String manufacturer;
     protected String model;
