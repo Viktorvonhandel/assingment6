@@ -1,4 +1,4 @@
-package gasthief;
+package main.gasthief;
 
 public class Car extends Vehicle {
     public Car(String manufacturer, String model, int maxSpeed) {

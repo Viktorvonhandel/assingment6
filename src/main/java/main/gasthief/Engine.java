@@ -1,4 +1,4 @@
-package gasthief;
+package main.gasthief;
 
 public class Engine {
     private String name;
