@@ -16,6 +16,6 @@ public class Vehicle {
     }
 
     public String getInfo() {
-        return manufacturer + " " + model + "\nMoottori: " + engine.getName() + " " + engine.getPower() + "kW\nHuippunopeus: " + maxSpeed + "km/h";
+        return manufacturer + " " + model + "\nMoottori: " + engine.getName() + " " + engine.getPower() + "kW\nHuippunopeus: " + maxSpeed + "km/h\n";
     }
 }

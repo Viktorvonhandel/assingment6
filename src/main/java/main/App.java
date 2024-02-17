@@ -1,4 +1,4 @@
-package gasthief.main;
+package main;
 
 
 import java.util.ArrayList;
@@ -24,9 +24,9 @@ public class App {
                     System.out.println("Minkä kulkuneuvon haluat rakentaa? 1) auto, 2) lentokone, 3) laiva");
                     int typeChoice = scanner.nextInt();
                     System.out.println("Anna kulkuneuvon valmistaja:");
-                    String manufacturer = scanner.next();
+                    String manufacturer = scanner.nextLine();
                     System.out.println("Anna kulkuneuvon malli:");
-                    String model = scanner.next();
+                    String model = scanner.nextLine();
                     System.out.println("Anna kulkuneuvon huippunopeus:");
                     int maxSpeed = scanner.nextInt();
                     switch (typeChoice) {
